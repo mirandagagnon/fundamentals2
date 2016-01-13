@@ -26,3 +26,13 @@ puts students.keys
 new_val = students.each {|key, value| students[key] = (value * 0.05) + value}
 
 display_students(new_val)
+
+#delete cohort 2 and display
+students.delete(:cohort2)
+
+display_students(students)
+
+#calculate total number of students
+total_students = students.values.inject(0) {|sum, value| sum + value}
+
+puts total_students
