@@ -20,5 +20,9 @@ students[:cohort4] = 43
 display_students(students)
 
 #use keys method to create an array of the hash keys
-
 puts students.keys
+
+#increase each cohort size by 5% and display the results
+new_val = students.each {|key, value| students[key] = (value * 0.05) + value}
+
+display_students(new_val)
