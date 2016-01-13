@@ -10,13 +10,13 @@ groceries = ["apple", "banana", "eggs", "cheese"]
 groceries << "rice"
 
 #Create a method to list items in grocery list
-def add_item (list)
+def print_list (list)
   list.each do |item|
     puts "* " + item
   end
 end
 
-add_item(groceries)
+print_list(groceries)
 
 #Output the total number of items on your list
 puts "The total number of items on your list is: #{groceries.length}"
@@ -34,3 +34,6 @@ check_list(groceries, "banana")
 
 #display second item on the list
 puts groceries[1]
+
+#sort list alphabetically and output using method
+print_list(groceries.sort)
