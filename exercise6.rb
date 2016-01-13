@@ -37,3 +37,8 @@ puts groceries[1]
 
 #sort list alphabetically and output using method
 print_list(groceries.sort)
+
+#remove last item from list
+groceries.pop
+
+print_list(groceries)
