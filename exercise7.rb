@@ -13,3 +13,8 @@ def display_students (hash_name)
 end
 
 display_students(students)
+
+#add cohort 4
+students[:cohort4] = 43
+
+display_students(students)
