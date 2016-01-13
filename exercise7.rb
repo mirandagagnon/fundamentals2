@@ -18,3 +18,7 @@ display_students(students)
 students[:cohort4] = 43
 
 display_students(students)
+
+#use keys method to create an array of the hash keys
+
+puts students.keys
